@@ -23,12 +23,13 @@
             android:textColor="@color/black"
             android:text="Pin View Keyboard"/>
 
-        <com.riandivayana.pinviewkeyboard.resources.PinView
+        <com.riandivayana.pinviewkeyboard.PinViewKeyboard
+            android:id="@+id/pin_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:gravity="center"
-            android:text="Hello World!"
+            app:pinCount='6'
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -36,11 +37,12 @@
 
     </LinearLayout>
 
-    <Button
+    <com.riandivayana.pinviewkeyboard.resources.CustomButton
+        android:id="@+id/submit_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_dark"
         android:layout_margin="16dp"
-        android:text="Submit"/>
+        android:text="Submit"
+        app:ButtonType="primary"/>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.riandivayana.pinviewkeyboard.resources
+package com.riandivayana.pinviewkeyboard
 
 /**
  * Created by Rian Divayana on 19/05/21
@@ -11,7 +11,6 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.GridLayoutManager
-import com.riandivayana.pinviewkeyboard.R
 import com.riandivayana.pinviewkeyboard.databinding.FragmentPinCodeBinding
 import com.riandivayana.pinviewkeyboard.view.adapter.PinBulletAdapter
 import com.riandivayana.pinviewkeyboard.view.adapter.PinNumberAdapter
@@ -28,7 +27,7 @@ interface OnPinViewChangeListener {
     fun onPinNotReady()
 }
 
-class PinView : LinearLayout {
+class PinViewKeyboard : LinearLayout {
 
     //region properties
     private lateinit var binding: FragmentPinCodeBinding
@@ -87,6 +86,10 @@ class PinView : LinearLayout {
     fun addOnPinViewChangeListener(listener: OnPinViewChangeListener) {
         pinInterface = listener
         pinInterface?.onPinNotReady()
+    }
+
+    fun getPin() : String {
+        return pinBulletAdapter.data
     }
 
     fun resetPin() {

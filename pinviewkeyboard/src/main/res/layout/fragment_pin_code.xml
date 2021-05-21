@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingDefaultResource">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pin_bullet"
         android:layout_width="match_parent"
