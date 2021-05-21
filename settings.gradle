@@ -1,0 +1,3 @@
+rootProject.name = "pinview"
+include ':example'
+include ':pinviewkeyboard'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pin_bullet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="34dp"
+        android:paddingEnd="34dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="5"
+        tools:listitem="@layout/rv_pin_bullet"
+        tools:itemCount="5"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pin_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:itemCount="12"
+        tools:listitem="@layout/rv_pin_number"/>
+
+</merge>
