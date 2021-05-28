@@ -33,7 +33,7 @@ Sync the gradle and that's it! :+1:
 ## How to use
 
 ### xml
-```
+```xml
         <com.riandivayana.pinviewkeyboard.PinViewKeyboard
             android:id="@+id/pin_view"
             android:layout_marginTop="@dimen/base_margin"
