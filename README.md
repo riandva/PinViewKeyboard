@@ -20,7 +20,7 @@ allprojects {
 Add the dependency :
 ```java
 dependencies {
-	implementation 'com.github.Mathvediz:PinViewKeyboard:v1.0.2'
+	implementation 'com.github.Mathvediz:PinViewKeyboard:latest_version'
 }
 ```
 Sync the gradle and that's it! :+1:
