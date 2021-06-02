@@ -10,7 +10,8 @@
         android:id="@+id/img_delete_pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="32dp"
+        android:paddingTop="@dimen/base_margin"
+        android:paddingBottom="@dimen/base_margin"
         android:src="@drawable/ic_numpad_delete"/>
 
 </LinearLayout>
